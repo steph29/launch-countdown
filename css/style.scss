@@ -1,0 +1,46 @@
+$graylishBlue: hsl(237, 18%, 59%);
+$SoftRed: hsl(345, 95%, 68%);
+$White: hsl(0, 0%, 100%);
+$DarkDesaturatedBlue: hsl(236, 21%, 26%);
+$VeryDarkBlue: hsl(235, 16%, 14%);
+$VeryVeryDarkBlue: hsl(234, 17%, 12%);
+$BlueRedlish: rgb(50, 40, 61);
+
+html {
+  font-family: "Red Hat Text", sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background: linear-gradient($VeryVeryDarkBlue, $BlueRedlish);
+  color: $White;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/bg-stars.svg");
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  img {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+  }
+}
