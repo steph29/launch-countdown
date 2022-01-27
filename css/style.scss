@@ -38,34 +38,56 @@ body {
 }
 .timeCountDown {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   align-items: center;
   margin-top: 180px;
   color: $DarkDesaturatedBlue;
 }
+.text {
+  color: $White;
+  filter: brightness(50%);
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
+.countdown {
+  color: $SoftRed;
+}
 .container-card {
   text-align: center;
   justify-content: space-between;
+  margin-left: 20px;
 }
 .card {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100px;
-  height: 60px;
+  height: 90px;
   border-radius: 5px;
-  background-color: $DarkDesaturatedBlue;
+  box-shadow: 0px 10px 2px $VeryVeryDarkBlue;
+  background: linear-gradient(
+    180deg,
+    rgb(44, 44, 61) 50%,
+    hsl(236, 21%, 26%) 50%
+  );
 }
+
 .container {
   width: 300px;
   text-align: center;
   margin: auto auto;
   z-index: 2;
-  img {
+  svg {
     margin: 20px;
   }
 }
-
+svg {
+  margin: 3%;
+}
+path:hover {
+  fill: $SoftRed;
+}
 .attribution {
   max-width: 500px;
   text-align: center;
@@ -74,7 +96,6 @@ body {
   /* margin-bottom: 7%; */
 }
 .elementFooter {
-  margin: 3%;
 }
 footer {
   background-image: url("/images/pattern-hills.svg");
@@ -87,5 +108,11 @@ footer {
 @media screen and (max-width: 500px) {
   html {
     font-size: 11px;
+  }
+  .timeCountDown {
+    justify-content: space-between;
+  }
+  .container-card {
+    margin: 0px;
   }
 }

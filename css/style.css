@@ -34,15 +34,28 @@ body {
 
 .timeCountDown {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   align-items: center;
   margin-top: 180px;
   color: #343650;
 }
 
+.text {
+  color: white;
+  filter: brightness(50%);
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
+
+.countdown {
+  color: #fb6087;
+}
+
 .container-card {
   text-align: center;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .card {
@@ -50,9 +63,10 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100px;
-  height: 60px;
+  height: 90px;
   border-radius: 5px;
-  background-color: #343650;
+  box-shadow: 0px 10px 2px #191a24;
+  background: linear-gradient(180deg, #2c2c3d 50%, #343650 50%);
 }
 
 .container {
@@ -61,8 +75,16 @@ body {
   margin: auto auto;
   z-index: 2;
 }
-.container img {
+.container svg {
   margin: 20px;
+}
+
+svg {
+  margin: 3%;
+}
+
+path:hover {
+  fill: #fb6087;
 }
 
 .attribution {
@@ -71,10 +93,6 @@ body {
   margin: auto auto;
   z-index: 2;
   /* margin-bottom: 7%; */
-}
-
-.elementFooter {
-  margin: 3%;
 }
 
 footer {
@@ -88,6 +106,14 @@ footer {
 @media screen and (max-width: 500px) {
   html {
     font-size: 11px;
+  }
+
+  .timeCountDown {
+    justify-content: space-between;
+  }
+
+  .container-card {
+    margin: 0px;
   }
 }
 
